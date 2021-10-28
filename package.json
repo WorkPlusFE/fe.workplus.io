@@ -1,0 +1,18 @@
+{
+  "name": "fe.workplus.io",
+  "version": "1.0.0",
+  "description": "WorkPlusFE official website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "repository": "https://github.com/WorkPlusFE/fe.workplus.io.git",
+  "author": "Hejx <531601727@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "vitepress": "^0.20.0"
+  }
+}
