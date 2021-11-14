@@ -1,2 +1,2 @@
 # fe.workplus.io
-📝 WorkPlusFE official website, base VitePress.
+📝 WorkPlusFE official website, base VuePress.
