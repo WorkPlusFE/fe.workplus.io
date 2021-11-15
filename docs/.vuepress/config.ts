@@ -7,7 +7,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   description: '深圳恒拓高科信息技术有限公司 - 前端技术部',
 
   themeConfig: {
-    logo: 'https://vuejs.org/images/logo.png',
+    logo: '/images/icon.png',
     navbar: [
       { text: '项目', link: '/start/' },
       { text: '规范', link: '/guide/' },
@@ -23,5 +23,23 @@ export default defineUserConfig<DefaultThemeOptions>({
         ]
       },
     ],
+    sidebar: {
+      '/guide/': [
+        {
+          text: '项目规范',
+          children: [
+            'code-guide',
+            'branch-guide',
+            'git-guide',
+            'multiple-remote',
+            'file-comment',
+          ]
+        }
+      ], 
+    },
+    lastUpdatedText: '最后更新时间',
+    contributorsText: '编辑者',
+    editLinks: true,
+    editLinkText: '帮助 WorkPlusFE 改善此页面！'
   },
 })
