@@ -1,2 +1,3 @@
 # fe.workplus.io
-📝 WorkPlusFE official website, base VuePress.
+
+📝 WorkPlusFE official website, base [Docusaurus](https://docusaurus.io/).

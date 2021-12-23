@@ -2,11 +2,6 @@
 
 统一安装`VScode`的 [koroFileHeader](https://marketplace.visualstudio.com/items?itemName=OBKoro1.korofileheader)插件。
 
-<p>
-  <img :src="$withBase('/fileheader.png')" width=300 alt="fileheader">
-</p>
-
-
 ## 添加注释
 
 1. **文件头部添加注释：**

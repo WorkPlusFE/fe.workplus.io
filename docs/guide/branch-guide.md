@@ -4,10 +4,6 @@ sidebarDepth: 3
 
 # 分支管理
 
-<p>
-  <img :src="$withBase('/git-branch.png')" alt="git-branch">
-</p>
-
 ## 基本原则
 
 一个项目 Git 初始化后，会生成一个主干分支，通常叫 master（部分会叫 main），然后也会人为创建一个叫 dev 的分支，用于开发。
