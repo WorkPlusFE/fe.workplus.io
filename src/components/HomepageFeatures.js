@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('../../static/img/share.svg').default,
     description: (
       <>
-       每月举行一次内部分享会，内容主要围绕前端前沿技术的探讨及项目经验的分享，并会以文章的形式发布到<a className={styles.colorWhite}  title="团队博客" href="https://fe-blog.workplus.oio">团队博客</a>上。
+       每月举行一次内部分享会，内容主要围绕前端前沿技术的探讨及项目经验的分享，并会以文章的形式发布到团队<a className={styles.colorWhite}  title="团队博客" href="https://fe-blog.workplus.oio">博客</a>上。
       </>
     ),
   },

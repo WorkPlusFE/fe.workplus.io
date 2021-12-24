@@ -10,6 +10,7 @@
 
 .card {
   color: var(--ifm-font-color-base);
+  margin-bottom: var(--ifm-spacing-horizontal) !important;
 }
 
 .card:hover {

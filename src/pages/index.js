@@ -23,6 +23,33 @@ function HomepageHeader() {
   );
 }
 
+function Footer() {
+  return (
+    <footer className="footer text--center">
+      <div className="container container--fluid">
+        <div className="footer__links">
+          <a className="footer__link-item" href="https://workplus.io">
+            公司官网
+          </a>
+          <span className="footer__link-separator">·</span>
+          <a className="footer__link-item" href="https://open.workplus.io">
+            开放平台
+          </a>
+          <span className="footer__link-separator">·</span>
+          <a className="footer__link-item" href="https://lite.workplus.io">
+            WorkPlus Lite
+          </a>
+          <span className="footer__link-separator">·</span>
+          <a className="footer__link-item" href="https://kunlun.workplus.io">
+            KunLun
+          </a>
+        </div>
+        <div>©2015-{new Date().getFullYear()} 深圳恒拓高科信息技术有限公司 版权所有</div>
+      </div>
+    </footer>
+  );
+}
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -36,6 +63,7 @@ export default function Home() {
         <GithubRepos />
         <GithubOrgs />
       </main>
+      <Footer />
     </Layout>
   );
 }

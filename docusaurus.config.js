@@ -103,9 +103,6 @@ const config = {
           },
         ],
       },
-      footer: {
-        copyright: `©2015-${new Date().getFullYear()} 深圳恒拓高科信息技术有限公司 版权所有`
-      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

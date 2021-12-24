@@ -4,7 +4,7 @@ import SessionTitle from './SessionTitle';
 import styles from './Github.module.css';
 
 const GithubRepos = () => (
-  <div className="container">
+  <div className="container" style={{ marginTop: '-16px' }}>
     <SessionTitle title="团队项目" />
     <div className={clsx('row')}>
       <div className={clsx(styles.PaddingBottom, 'col col--4')}>
