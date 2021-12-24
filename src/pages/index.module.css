@@ -4,13 +4,13 @@
  */
 
 .heroBanner {
-  padding: 5rem 0 0 0;
+  padding: 5rem 0 3rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
   background: url('/img/home-bg.png') center center no-repeat;
   color: var(--ifm-font-color-secondary);
-  background-size: 100%;
+  background-size: 80%;
 }
 
 .heroTitle {

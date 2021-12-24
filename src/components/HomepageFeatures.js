@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: '统一脚手架',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('../../static/img/scaffold.svg').default,
     description: (
       <>
         通过 <a className={styles.colorWhite} title="Vitue" href="https://github.com/vitue-scaffold">Vitue</a> 来统一管理所有项目模版及创建。目前前端主要技术栈为：Vue3.0、Vite、TypeScript 及 SASS 等。
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: '规范开发过程',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('../../static/img/code.svg').default,
     description: (
       <>
         借助 ESlint、Stylelint 及 commitlint 等工具，全方位保障项目开发过程的规范和一致性。同时通过 Jenkins、Sentry 等工具，保证项目的线上稳定性。 
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: '每月内部分享',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('../../static/img/share.svg').default,
     description: (
       <>
        每月举行一次内部分享会，内容主要围绕前端前沿技术的探讨及项目经验的分享，并会以文章的形式发布到<a className={styles.colorWhite}  title="团队博客" href="https://fe-blog.workplus.oio">团队博客</a>上。
