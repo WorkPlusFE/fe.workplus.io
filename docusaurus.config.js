@@ -86,9 +86,9 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'about',
+            docId: 'gists',
             position: 'right',
-            label: '关于',
+            label: 'Gists',
           },
           {
             href: 'https://fe-blog.workplus.io',
