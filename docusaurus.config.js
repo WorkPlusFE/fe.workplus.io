@@ -10,7 +10,7 @@ const config = {
   tagline: '深圳恒拓高科信息技术有限公司-前端技术部',
   url: 'https://workplus.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'workplusfe', // Usually your GitHub org/user name.
