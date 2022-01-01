@@ -64,6 +64,12 @@ const config = {
             type: 'doc',
             docId: 'start',
             position: 'left',
+            label: '项目',
+          },
+          {
+            type: 'doc',
+            docId: 'develop',
+            position: 'left',
             label: '开发',
           },
           {
@@ -77,12 +83,6 @@ const config = {
             docId: 'packages',
             position: 'left',
             label: '工具',
-          },
-          {
-            type: 'doc',
-            docId: 'advanced',
-            position: 'left',
-            label: '进阶',
           },
           {
             type: 'doc',
