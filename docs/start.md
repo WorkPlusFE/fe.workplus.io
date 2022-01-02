@@ -1,44 +1,51 @@
 
 
-# 创建
+# 通过 cli 创建
 
-`@w6s/cli`是团队内部指定使用的 cli 工具，常用于快速创建项目初始架构。更多关于 w6s-cli 的详细介绍，可以查看[w6s-cli](./cli.html)栏目。
+`@vitue/cli`是团队内部指定用于创建项目初始架构的 cli 工具，其作用很纯粹，就是下载`vitue-scaffold`组织内的 template 项目。通过`vitue init`可以查询到组织内所有可用的项目模版，选择需要的，即可下载安装到本地目录。
+
+除此之外，没有其他任何功能。
 
 ## 安装 cli
 
 通过以下命令进行安装：
 
 ```bash
-yarn global add @w6s/cli
+yarn global add @vitue/cli
 # or
-npm install -g @w6s/cli
+npm install -g @vitue/cli
 ```
 
-安装成功后，在 shell 中键入`w6s`，即可查看所有功能说明。
+安装成功后，在 shell 中键入`vitue`，即可查看所有功能说明。
 
-## w6s init
+## vitue init
 
-当前`w6s-cli`内置两个项目模版，分别是`admin`和`H5`，如其名，admin 为管理后台类型的前端项目模版，而 H5 就是轻应用的前端项目模版。
+`@vitue/cli`并没有内置任何项目模版，所有模版都来自其 Github 组织上，[vitue-scaffold](https://github.com/vitue-scaffold) 内所有的模版类型项目，都可使用。
 
-假设当前在文件目录A， 执行以下命令：
+执行以下命令：
 
 ```bash
 w6s init project1
 ```
 
-此时，会要求使用者选择项目模版，通过`上下方向键`选择需要的模版即可。
+此时，cli 会通过网络请求拉取所有的模版项目并展示在列表上，可通过`上下方向键`选择需要的模版即可。
 
-选择模版后，cli 会自动在 A 目录下创建 project1 文件夹，并把所选的项目模版生成到 project1 文件夹内，在这之前会有一些人机交互，使用者需要输入一些简单的项目信息：
+选择模版后，cli 会自动在当前目录下创建 project1 文件夹，并把所选的项目模版生成到 project1 文件夹内，在这之前会有一些人机交互，使用者需要输入一些简单的项目信息：
 
 ```bash
-? 请输入项目名称 project1
-? 请输入项目描述 project1
-? 请输入项目创建者 hejx
+# Enter some basic information
+? Project name: test
+? Project description: hello
+? Author: Hejx <test@qq.com>
 ```
 
-项目创建完毕后，会询问是否自动安装依赖及启动服务，然后输入`yes/no`即可。cli 会自动判断你的电脑上所安装的`Node.js包管理器`，优先会使用`Yarn`进行依赖的安装。
+:::caution 注意网络问题
 
-如果没有选择自动安装依赖及启动服务，需要进入 project1 文件夹，执行以下命令：
+`@vitue/cli`会访问 Github API 及使用 [flippidippi/download-git-repo](https://gitlab.com/flippidippi/download-git-repo#readme) 进行 Github 项目的在线下载，所以请关注下网络的情况，可能会出现超时等问题。
+
+:::
+
+项目创建完成后，需要自行安装依赖及运行项目：
 
 ```bash
 # 进入目录
@@ -48,5 +55,6 @@ cd project1
 yarn
 
 # 安装成功后，启动服务
-yarn serve # yarn dev 同样可用
+yarn dev
 ```
+
